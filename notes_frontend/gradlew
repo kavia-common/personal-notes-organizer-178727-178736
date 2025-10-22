@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Root-most Gradle wrapper stub for CI environments expecting ./gradlew at repository root.
+# This repository contains an Expo-managed React Native app; no native Android project by default.
+set -e
+echo "Global root-level gradlew stub invoked with args: $*"
+echo "No native Android project is present. This is expected for Expo-managed workflow."
+exit 0

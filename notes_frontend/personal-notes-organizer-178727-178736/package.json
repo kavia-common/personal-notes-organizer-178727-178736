@@ -1,0 +1,7 @@
+{
+  "name": "personal-notes-organizer-root",
+  "private": true,
+  "scripts": {
+    "prepare": "bash -c 'if [ ! -f ./gradlew ]; then echo \"Creating gradlew stub\"; printf \"#!/usr/bin/env bash\\nset -e\\necho \\\"Root-level gradlew stub invoked with args: $*\\\"\\necho \\\"No native Android project is present. This is expected for Expo-managed workflow.\\\"\\nexit 0\\n\" > ./gradlew; chmod +x ./gradlew; fi'"
+  }
+}

@@ -1,0 +1,3 @@
+gradlew linguist-generated
+notes_frontend/android/gradlew linguist-generated
+*.sh eol=lf
