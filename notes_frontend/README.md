@@ -23,3 +23,4 @@ Notes:
    npm run prebuild:android
   and then build via Android Studio or Gradle.
 - SQLite requires device or a compatible web shim. On web in development, behaviour may be limited. On mobile (Expo Go or dev builds) it works fully.
+- In this project, web preview uses an in-memory fallback for notes (no persistence across reloads) to prevent web crashes. Mobile continues to use SQLite.

@@ -85,5 +85,5 @@ export const useTheme = (): Theme => {
 // PUBLIC_INTERFACE
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   /** Provides Ocean Professional theme to the app. */
-  return <ThemeContext.Provider value={OceanProfessional}>{children}</ThemeContext.Provider>;
+  return React.createElement(ThemeContext.Provider, { value: OceanProfessional }, children);
 };

@@ -6,9 +6,17 @@ import { defineConfig } from "eslint/config";
 export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    languageOptions: { globals: globals.browser },
+    languageOptions: {
+      parser: tseslint.parser,
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+        sourceType: "module",
+        project: false,
+      },
+      globals: globals.browser,
+    },
     settings: { react: { version: "detect" } },
   },
-  tseslint.configs.recommended,
+  ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
 ]);
